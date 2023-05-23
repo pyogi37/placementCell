@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+  text-align: center;
+}
+
+.footer-nav {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}

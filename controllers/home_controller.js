@@ -1,3 +1,3 @@
 module.exports.home = function (req, res) {
-  return res.end("<h1>Exprss is up for App</h1>");
+  return res.render("home", { title: "Placement Cell CN" });
 };
