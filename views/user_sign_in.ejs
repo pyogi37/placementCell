@@ -1,0 +1,26 @@
+<div class="FormContainer">
+  <div class="formHeading">Sign in</div>
+  <div class="Form">
+    <form action="/users/create-session" method="post">
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="password" name="password" placeholder="Password" required />
+      <button class="submitButton" type="submit" value="Sign In">
+        Sign In
+      </button>
+    </form>
+  </div>
+
+  <!-- <p>
+    <a href="/users/auth/google">Google Sign In/ Sign Up</a>
+  </p> -->
+
+  <div class="navigators">
+    <span>
+      Not signed up?
+      <a href="/users/sign-up">Sign up here</a>
+    </span>
+    <span>
+      <a href="/users/forgot-pwd">Forgot Password?</a>
+    </span>
+  </div>
+</div>

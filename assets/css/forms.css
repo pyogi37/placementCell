@@ -1,0 +1,81 @@
+.FormContainer {
+  width: 25%;
+  height: 50%;
+  background-color: purple;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4%;
+  position: absolute;
+  right: 35%;
+  top: 20%;
+}
+
+.formHeading {
+  display: flex;
+  height: 10%;
+  width: 100% - 5px;
+  align-items: center;
+  justify-content: space-around;
+  text-transform: capitalize;
+  font-size: large;
+  border-radius: 4%;
+  color: purple;
+  background-color: rgb(253, 218, 13);
+}
+
+.Form {
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.Form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-around; */
+}
+
+.Form form input {
+  width: 15vw;
+  border-radius: 4%;
+  padding: 2px;
+  margin: 5px;
+}
+
+.navigators {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 20%;
+  padding: 2px;
+  /* margin: 5px; */
+  border-radius: 4%;
+  background-color: rgb(253, 218, 13);
+}
+
+.navigators span {
+  margin-bottom: 5px;
+  color: purple;
+}
+.navigators span a {
+  color: black;
+  /* text-decoration: none; */
+}
+
+.submitButton {
+  width: 7vw;
+  border-radius: 4%;
+  background-color: rgb(253, 218, 13);
+  padding: 2px;
+  margin: 5px;
+  color: blueviolet;
+  border: 1px solid purple;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: blueviolet;
+  opacity: 0.3; /* Firefox */
+}

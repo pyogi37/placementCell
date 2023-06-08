@@ -1,0 +1,78 @@
+<form class="form-inline addForms" id="studentsForm" method="post">
+  <div class="form-group mb-2">
+    <label for="batch">Batch</label>
+    <input
+      type="text"
+      form-control-plaintext
+      id="batch"
+      placeholder="Enter Batch"
+      name="batch"
+    />
+  </div>
+
+  <div class="form-group mb-2" id="studentDetails">
+    <label for="studentDetails">Student Details</label>
+
+    <input
+      type="text"
+      form-control-plaintext
+      id="name"
+      placeholder="Enter Name"
+      name="name"
+    />
+    <input
+      type="text"
+      form-control-plaintext
+      id="college"
+      placeholder="Enter college"
+      name="college"
+    />
+
+    <select class="form-control-inline" id="status" name="status">
+      <option value="true">Placed</option>
+      <option value="false">Not Placed</option>
+    </select>
+  </div>
+
+  <div class="form-group mb-2" id="coursesScore">
+    <label for="coursesScore">Courses Scores</label>
+
+    <input
+      type="number"
+      id="dsa"
+      placeholder="DSA Marks"
+      name="dsa"
+      min="0"
+      max="1200"
+    />
+    <input
+      type="number"
+      id="webD"
+      placeholder="Web Dev Marks"
+      name="webd"
+      min="0"
+      max="1200"
+    />
+
+    <input
+      type="number"
+      id="react"
+      placeholder="React Marks"
+      name="react"
+      min="0"
+      max="1200"
+    />
+  </div>
+
+  <div class="form-group mb-2" id="interviews">
+    <label for="interviews">Interviews</label>
+
+    <select class="form-select" multiple id="interviews" name="interviews">
+      <% interviews.forEach(function(interview) { %>
+      <option value="<%= interview.id %>"><%= interview.companyName %></option>
+      <% }); %>
+    </select>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RESULTS</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th,
+      td {
+        border: 1px solid black;
+        padding: 8px;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>RESULTS</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Student Name</th>
+          <th>Company Name</th>
+          <th>Result</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% results.forEach(function(result) { %>
+
+        <tr>
+          <td><%= result.interview.companyName%></td>
+          <td><%=result.student.name%></td>
+          <td><%=result.result %><br /></td>
+        </tr>
+        <% }); %>
+      </tbody>
+    </table>
+    <button class="submitButton">
+      <a href="/results/download" style="text-decoration: none">Download</a>
+    </button>
+  </body>
+</html>

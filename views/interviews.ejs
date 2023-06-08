@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Interview Details</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th,
+      td {
+        border: 1px solid black;
+        padding: 8px;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Interview Details</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Company Name</th>
+          <th>Date</th>
+          <th>Students</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% interviews.forEach(function(interview) { %>
+
+        <tr>
+          <td>
+            <a href="/interviews/edit/<%=interview._id%>"
+              ><%= interview.companyName %></a
+            >
+          </td>
+          <td><%= interview.date.toDateString() %></td>
+          <td>
+            <% interview.students.forEach(function(student) { %>
+            <a href="/results/<%=interview._id%>/<%=student._id%>">
+              <%=student.name %> </a
+            ><br />
+            <% }); %>
+          </td>
+        </tr>
+        <% }); %>
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<form class="form-inline addForms" id="resultForm" method="post">
+  <div class="form-group mb-2">
+    <label for="company">Company Name</label>
+    <input
+      type="text"
+      form-control-plaintext
+      id="company"
+      name="companyName"
+      value="<%=interview.companyName%>"
+      readonly
+    />
+
+    <label for="studentName">Student Name</label>
+    <input
+      type="text"
+      form-control-plaintext
+      id="studentName"
+      name="studentName"
+      value="<%=student.name%>"
+      readonly
+    />
+
+    <select class="form-select" id="result" name="result">
+      <option value="PASS">Pass</option>
+      <option value="FAIL">Fail</option>
+      <option value="ON_HOLD">On Hold</option>
+      <option value="DIDNT_ATTEMPT">Didn't Attempt</option>
+    </select>
+  </div>
+
+  <button type="submit" class="btn btn-primary" value="Submit">Submit</button>
+</form>

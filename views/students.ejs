@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Details</title>
+    <style>
+      table {
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th,
+      td {
+        border: 1px solid black;
+        padding: 8px;
+      }
+
+      th {
+        background-color: #f2f2f2;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Student Details</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>College</th>
+          <th>Status</th>
+          <th>Batch</th>
+          <th>DSA Score</th>
+          <th>Web Development Score</th>
+          <th>React Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <% students.forEach(function(student) { %>
+        <tr>
+          <td>
+            <a href="/students/edit/<%=student.id%>"><%= student.name %></a>
+          </td>
+          <td><%= student.college %></td>
+          <td><%= student.status %></td>
+          <td><%= student.batch %></td>
+          <td><%= student.dsa %></td>
+          <td><%= student.webd %></td>
+          <td><%= student.react %></td>
+        </tr>
+        <% }); %>
+      </tbody>
+    </table>
+  </body>
+</html>

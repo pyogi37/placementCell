@@ -1,6 +1,7 @@
 body {
   margin: 0;
   text-align: center;
+  background-color: bisque;
 }
 
 .footer-nav {
@@ -8,3 +9,4 @@ body {
   bottom: 0px;
   width: 100%;
 }
+

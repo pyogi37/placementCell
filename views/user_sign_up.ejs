@@ -1,0 +1,30 @@
+<div class="FormContainer">
+  <div class="formHeading">Sign up</div>
+  <div class="Form">
+    <form action="/users/create" method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="password" name="password" placeholder="Password" required />
+      <input
+        type="password"
+        name="confirm_password"
+        placeholder="Confirm Password"
+        required
+      />
+      <button class="submitButton" type="submit" value="Sign Up">
+        Sign Up
+      </button>
+    </form>
+  </div>
+
+  <!-- <p>
+    <a href="/users/auth/google">Google Sign In/ Sign Up</a>
+  </p> -->
+
+  <div class="navigators">
+    <span>
+      Already signed up?
+      <a href="/users/sign-in">Sign in</a>
+    </span>
+  </div>
+</div>
